@@ -1,5 +1,6 @@
 #include "WeatherData.h"
-
+#include<iostream>
+using namespace std;
 void WeatherData :: registerObserver(Observer*o){
     observers.push_back(o);
 }

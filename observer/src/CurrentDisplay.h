@@ -10,7 +10,7 @@ using namespace std;
 
 class CurrentDisplay : public Observer, public DisplayElement {
     private :
-        float temperature,humidity;
+        float temperature,heat,humidity;
         WeatherData weatherData;
     public:
         CurrentDisplay(WeatherData& wd);
