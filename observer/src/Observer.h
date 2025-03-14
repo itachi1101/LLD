@@ -3,7 +3,7 @@
 
 class Observer {
     public:
-    virtual void update(float temp, float heat, float humidity)=0;
+    virtual void update(float temp, float humidity)=0;
     virtual ~Observer(){};
 };
 

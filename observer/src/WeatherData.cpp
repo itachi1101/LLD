@@ -11,13 +11,13 @@ void WeatherData :: removeObserver(Observer*o){
 
 void WeatherData :: notifyObservers(){
     for(Observer*obs:observers){
-        obs->update(temperature, heat,humidity);
+        obs->update(temperature,humidity);
     }
 }
 
-void WeatherData :: setMeasurements(float temp, float heat,float humidity){
+void WeatherData :: setMeasurements(float temp,float humidity){
     this->temperature = temp;
-    this->heat  = heat;
     this->humidity = humidity;
+    cout<<temperature <<" "<<humidity <<" hello"<<endl;
     notifyObservers();
 }

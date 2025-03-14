@@ -10,11 +10,11 @@ using namespace std;
 
 class CurrentDisplay : public Observer, public DisplayElement {
     private :
-        float temperature,heat,humidity;
-        WeatherData weatherData;
+        float temperature,humidity;
+        WeatherData&weatherData;
     public:
         CurrentDisplay(WeatherData& wd);
-        void update(float temp,float heat,float humidity) override;
+        void update(float temp,float humidity) override;
         void display() override;
 };
 
