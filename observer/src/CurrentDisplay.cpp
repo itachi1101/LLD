@@ -7,9 +7,9 @@ CurrentDisplay :: CurrentDisplay (WeatherData &wd) : weatherData(wd){
 }
 
 void CurrentDisplay :: update(float temp, float heat,float humidity){
-    temperature = temp;
-    heat = heat;
-    humidity = humidity;
+    temperature = weatherData.temperature;
+    heat = weatherData.heat;
+    humidity = weatherData.humidity;
 }
 
 void CurrentDisplay :: display(){

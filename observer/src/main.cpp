@@ -8,6 +8,7 @@ int main() {
     CurrentDisplay currentDisplay(weatherData);
 
     weatherData.setMeasurements(30.4, 65.0, 10.0);
+    currentDisplay.display();
     weatherData.setMeasurements(2.1, 70.0, 20.0);
 
     return 0;
